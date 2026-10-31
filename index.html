@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web mini Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">🏏 Bat<span>Pro</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Cricket Bats</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="cart-button" id="cartButton">
+                🛒 Cart <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-button" id="menuButton"
+                aria-label="Toggle navigation">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">THE GAME STARTS HERE</p>
+            <h1>Choose Your Bat.<br>Own The <span>Game.</span></h1>
+            <p class="hero-text">
+                Discover premium cricket bats designed for power,
+                precision and performance. Find your perfect match.
+            </p>
+            <a href="#products" class="primary-button">
+                Shop Cricket Bats →
+            </a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature">
+            <span>🏏</span>
+            <div>
+                <h3>Premium Quality</h3>
+                <p>Quality-focused cricket gear</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <span>🚚</span>
+            <div>
+                <h3>Easy Shopping</h3>
+                <p>Simple product selection</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <span>⭐</span>
+            <div>
+                <h3>For Every Player</h3>
+                <p>Options for different budgets</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="section-heading">
+            <p class="eyebrow">OUR COLLECTION</p>
+            <h2>Find Your Perfect Bat</h2>
+            <p>Choose a bat that matches your playing style.</p>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="shop-controls">
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search cricket bats..."
+                aria-label="Search cricket bats">
+
+            <select id="priceFilter" aria-label="Filter by price">
+                <option value="all">All Prices</option>
+                <option value="under2000">Under ₹2,000</option>
+                <option value="2000to5000">₹2,000 - ₹5,000</option>
+                <option value="above5000">Above ₹5,000</option>
+            </select>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <article class="product-card"
+                data-name="English Willow Pro"
+                data-price="6499">
+                <div class="product-image">
+                    <span class="product-tag">BEST SELLER</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=700&q=80"
+                        alt="Cricket equipment for English Willow Pro">
+                </div>
+                <div class="product-info">
+                    <p class="category">ENGLISH WILLOW</p>
+                    <h3>English Willow Pro</h3>
+                    <p class="description">
+                        Designed for powerful shots and confident strokes.
+                    </p>
+                    <div class="product-bottom">
+                        <span class="price">₹6,499</span>
+                        <button class="add-button">Add to Cart +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="Kashmir Willow Classic"
+                data-price="2499">
+                <div class="product-image">
+                    <span class="product-tag">POPULAR</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=700&q=80"
+                        alt="Cricket ground and sporting equipment">
+                </div>
+                <div class="product-info">
+                    <p class="category">KASHMIR WILLOW</p>
+                    <h3>Kashmir Willow Classic</h3>
+                    <p class="description">
+                        A versatile choice for practice and weekend matches.
+                    </p>
+                    <div class="product-bottom">
+                        <span class="price">₹2,499</span>
+                        <button class="add-button">Add to Cart +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="Power Hitter X"
+                data-price="4599">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=700&q=80"
+                        alt="Cricket match action">
+                </div>
+                <div class="product-info">
+                    <p class="category">POWER SERIES</p>
+                    <h3>Power Hitter X</h3>
+                    <p class="description">
+                        A stylish option for aggressive batting practice.
+                    </p>
+                    <div class="product-bottom">
+                        <span class="price">₹4,599</span>
+                        <button class="add-button">Add to Cart +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="Junior Cricket Bat"
+                data-price="1299">
+                <div class="product-image">
+                    <span class="product-tag">BEGINNERS</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1593766827228-8737bcd6bd2d?auto=format&fit=crop&w=700&q=80"
+                        alt="Sports equipment">
+                </div>
+                <div class="product-info">
+                    <p class="category">JUNIOR SERIES</p>
+                    <h3>Junior Cricket Bat</h3>
+                    <p class="description">
+                        A budget-friendly option for young players.
+                    </p>
+                    <div class="product-bottom">
+                        <span class="price">₹1,299</span>
+                        <button class="add-button">Add to Cart +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="Premium Match Bat"
+                data-price="8499">
+                <div class="product-image">
+                    <span class="product-tag">PREMIUM</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=700&q=80"
+                        alt="Professional sports field">
+                </div>
+                <div class="product-info">
+                    <p class="category">MATCH SERIES</p>
+                    <h3>Premium Match Bat</h3>
+                    <p class="description">
+                        A premium-style option for serious cricket players.
+                    </p>
+                    <div class="product-bottom">
+                        <span class="price">₹8,499</span>
+                        <button class="add-button">Add to Cart +</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card"
+                data-name="All Rounder Bat"
+                data-price="3499">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=700&q=80"
+                        alt="Sports field and equipment">
+                </div>
+                <div class="product-info">
+                    <p class="category">ALL-ROUNDER SERIES</p>
+                    <h3>All Rounder Bat</h3>
+                    <p class="description">
+                        An everyday choice for practice and friendly games.
+                    </p>
+                    <div class="product-bottom">
+                        <span class="price">₹3,499</span>
+                        <button class="add-button">Add to Cart +</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noProducts" class="no-products" hidden>
+            No cricket bats found. Try a different search.
+        </p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <p class="eyebrow">ABOUT BATPRO</p>
+            <h2>Made For The Love Of Cricket</h2>
+            <p>
+                BatPro is a student-designed cricket bat shopping
+                website concept. Our goal is to make exploring cricket
+                equipment simple, attractive and enjoyable.
+            </p>
+            <a href="#products" class="primary-button">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section" id="cart">
+        <div class="section-heading">
+            <p class="eyebrow">YOUR SELECTION</p>
+            <h2>Shopping Cart</h2>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Your cart is empty. Add a bat to get started!</p>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Total: <span id="cartTotal">₹0</span></h3>
+            <button class="primary-button" id="checkoutButton">
+                Place Demo Order
+            </button>
+        </div>
+        <p class="demo-note">
+            Student project demo only. No real payment or order is processed.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div>
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Contact BatPro</h2>
+            <p>Have questions about our demo collection? Send us a message.</p>
+        </div>
+
+        <form id="contactForm">
+            <input type="text" id="customerName"
+                placeholder="Your name" required>
+            <input type="email" id="customerEmail"
+                placeholder="Your email address" required>
+            <textarea id="customerMessage"
+                placeholder="Your message" rows="4" required></textarea>
+            <button type="submit" class="primary-button">Send Message</button>
+            <p id="formMessage" role="status"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#home" class="logo">🏏 Bat<span>Pro</span></a>
+        <p>Passion. Performance. Cricket.</p>
+        <p>&copy; <span id="year"></span> BatPro. College Project Demo.</p>
+    </footer>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
